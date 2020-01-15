@@ -1,0 +1,19 @@
+{
+  "name": "nodecurso-11-typescript-mysql",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Momfus/nodeCurso-11-typescript-mysql.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Momfus/nodeCurso-11-typescript-mysql/issues"
+  },
+  "homepage": "https://github.com/Momfus/nodeCurso-11-typescript-mysql#readme"
+}
