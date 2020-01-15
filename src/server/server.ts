@@ -1,4 +1,5 @@
 import express = require('express'); // Esta pensado para usarse en javascript, para que se pueda usar el tipo en typescript se instala npm install @types/express --save
+import path = require('path');
 
 export default class Server { // Puede ser usado en otros archivos y default se√±ala que por defecto se usa esta clase
 
@@ -19,10 +20,20 @@ export default class Server { // Puede ser usado en otros archivos y default se√
 
     }
 
+    // Establecer la carpeta publica del proyecto
+    private publicFolder() {
+
+        const publicPath = path.resolve( __dirname, '../public' );
+
+        this.app.use( express.static( publicPath ) );
+
+    }
+
     // Comenzar servidor
     start( callback: Function ) {
 
         this.app.listen( this.port, callback() );
+        this.publicFolder();
 
     }
 

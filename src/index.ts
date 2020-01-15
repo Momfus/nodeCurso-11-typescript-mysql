@@ -6,9 +6,10 @@ comando tsc para que vaya a una carpeta dist (configurado en tsconfig.json) */
 //----------------------------------
 
 import Server from './server/server';
-
+import router from './router/router'
 
 const server = Server.init( 3000 );
+server.app.use( router );
 
 server.start( () => {
 
